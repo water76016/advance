@@ -4,19 +4,13 @@ advance意为前进，旨在将自己的学习过程记录下来，希望每一�
 
 > 创作不易，如果大家觉得有帮助的话，麻烦给个star再走呗！！！
 
-[https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235542035.png]: 
+![image-20230703235633089](https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235542035.png)
 
 
-
-[的饭店饭点]: https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235542035.png
-
-
-
-https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235542035.png
 
 大家在使用过程中发现任何疑问，可添加我为好友，我会在收到消息后尽快给大家进行解答。
 
-![image-20230703235633089](README.assets/image-20230703235633089.png)
+![image-20230703235633089](https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235633089.png)
 
 ### 注意事项
 
@@ -33,58 +27,3 @@ https://water76016-advance.oss-cn-beijing.aliyuncs.com/image-20230703235542035.p
 | daixiaoyu-leetcode |                  对每一次力扣刷题进行记录                   |
 |    daixiaoyu-mq    | 用于记录与RabbitMQ、RocketMQ、Kafka等消息中间件有关的知识点 |
 |  daixiaoyu-spring  |              用于记录与spring生态有关的知识点               |
-
-### daixiaoyu-base模块详情
-
-|  子模块详情  |    子模块描述    |
-| :----------: | :--------------: |
-|  collection  | Java集合框架相关 |
-| design-model |   设计模式相关   |
-|   reflect    |   Java反射相关   |
-|    thread    |  Java多线程相关  |
-
-- collection
-- design-model
-- refect
-- thread
-
-### daixiaoyu-cache模块详情
-
-| 子模块详情 |   子模块描述    |
-| :--------: | :-------------: |
-|   redis    | Redis中间件相关 |
-
-- redis
-
-### daixiaoyu-common模块详情
-
-| 子模块详情 | 子模块描述 |
-| :--------: | :--------: |
-|            |            |
-
-### daixiaoyu-database模块详情
-
-| 子模块详情 | 子模块描述 |
-| :--------: | :--------: |
-|            |            |
-
-### daixiaoyu-leetcode模块详情
-
-| 子模块详情 | 子模块描述 |
-| :--------: | :--------: |
-|            |            |
-
-### daixiaoyu-database模块详情
-
-| 子模块详情 | 子模块描述 |
-| :--------: | :--------: |
-|            |            |
-
-### daixiaoyu-mq模块详情
-
-| 子模块详情 |      子模块描述      |
-| :--------: | :------------------: |
-|   kafka    |  Kafka相关的知识点   |
-| rabbit-mq  | RabbitMQ相关的知识点 |
-| rocket-mq  | RocketMQ相关的知识点 |
-

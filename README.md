@@ -1,3 +1,82 @@
-# advance
+### 前言
 
-记录每一个学习的过程
+advance意为前进，旨在将自己的学习过程记录下来，希望每一个人都能有所提高，有所收获。
+
+创作不易，如果大家觉得有帮助的话，麻烦给个star再走呗！！！
+
+![image-20230703235542035](README.assets/image-20230703235542035.png)
+
+大家在使用过程中发现任何疑问，可添加我为好友，我会在收到消息后尽快给大家进行解答。
+
+![image-20230703235633089](README.assets/image-20230703235633089.png)
+
+### 注意事项
+
+由于提供的示例代码较多，导致项目初始化时加载maven耗时较长，故注释了所有的pom文件，大家可以根据自己的需求，将对应的pom.xml文件注释去掉即可。
+
+### 主模块介绍
+
+|      模块名称      |                          模块介绍                           |
+| :----------------: | :---------------------------------------------------------: |
+|   daixiaoyu-base   |              用于记录与Java相关的一些基础知识               |
+|  daixiaoyu-cache   |              用于记录与Redis等缓存有关的知识点              |
+|  daixiaoyu-common  |          用于存放一些常用的工具类库，实体类等信息           |
+| daixiaoyu-database |       用于记录与MySQL、PostgreSQL等数据库有关的知识点       |
+| daixiaoyu-leetcode |                  对每一次力扣刷题进行记录                   |
+|    daixiaoyu-mq    | 用于记录与RabbitMQ、RocketMQ、Kafka等消息中间件有关的知识点 |
+|  daixiaoyu-spring  |              用于记录与spring生态有关的知识点               |
+
+### daixiaoyu-base模块详情
+
+|  子模块详情  |    子模块描述    |
+| :----------: | :--------------: |
+|  collection  | Java集合框架相关 |
+| design-model |   设计模式相关   |
+|   reflect    |   Java反射相关   |
+|    thread    |  Java多线程相关  |
+
+- collection
+- design-model
+- refect
+- thread
+
+### daixiaoyu-cache模块详情
+
+| 子模块详情 |   子模块描述    |
+| :--------: | :-------------: |
+|   redis    | Redis中间件相关 |
+
+- redis
+
+### daixiaoyu-common模块详情
+
+| 子模块详情 | 子模块描述 |
+| :--------: | :--------: |
+|            |            |
+
+### daixiaoyu-database模块详情
+
+| 子模块详情 | 子模块描述 |
+| :--------: | :--------: |
+|            |            |
+
+### daixiaoyu-leetcode模块详情
+
+| 子模块详情 | 子模块描述 |
+| :--------: | :--------: |
+|            |            |
+
+### daixiaoyu-database模块详情
+
+| 子模块详情 | 子模块描述 |
+| :--------: | :--------: |
+|            |            |
+
+### daixiaoyu-mq模块详情
+
+| 子模块详情 |      子模块描述      |
+| :--------: | :------------------: |
+|   kafka    |  Kafka相关的知识点   |
+| rabbit-mq  | RabbitMQ相关的知识点 |
+| rocket-mq  | RocketMQ相关的知识点 |
+

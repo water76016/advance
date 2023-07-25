@@ -1,13 +1,13 @@
-package com.daixiaoyu.redis;
+package com.daixiaoyu.bloom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RedisApplication {
+public class BloomApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RedisApplication.class, args);
+        SpringApplication.run(BloomApplication.class, args);
     }
 
 }

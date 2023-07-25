@@ -1,10 +1,10 @@
-package com.daixiaoyu.redis;
+package com.daixiaoyu.bloom;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RedisApplicationTests {
+class BloomApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,13 +1,13 @@
-package com.daixiaoyu.rabbitmq;
+package com.daixiaoyu.redisutil;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RabbitMqApplication {
+public class RedisUtilApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RabbitMqApplication.class, args);
+        SpringApplication.run(RedisUtilApplication.class, args);
     }
 
 }

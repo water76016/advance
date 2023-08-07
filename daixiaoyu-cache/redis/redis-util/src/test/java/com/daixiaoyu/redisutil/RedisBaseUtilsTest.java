@@ -15,21 +15,21 @@ class RedisBaseUtilsTest {
     private final String SET_PERFIX = "SET_" + PERFIX + ":";
     private final String ZSET_PERFIX = "ZSET_" + PERFIX + ":";
 
-//    /**
-//     * @author: water76016
-//     * @createTime: 2023年02月04 01:14:01
-//     * @description: 执行测试用例之前，先清空Redis中所有的测试数据
-//     * @param:
-//     * @return: void
-//     */
-//    @BeforeEach
-//    void initTestData(){
-//        RedisSceneUtils.delKeysByPerfix(STRING_PERFIX);
-//        RedisSceneUtils.delKeysByPerfix(HASH_PERFIX);
-//        RedisSceneUtils.delKeysByPerfix(LIST_PERFIX);
-//        RedisSceneUtils.delKeysByPerfix(SET_PERFIX);
-//        RedisSceneUtils.delKeysByPerfix(ZSET_PERFIX);
-//    }
+    /**
+     * @author: water76016
+     * @createTime: 2023年02月04 01:14:01
+     * @description: 执行测试用例之前，先清空Redis中所有的测试数据
+     * @param:
+     * @return: void
+     */
+    @BeforeEach
+    void initTestData(){
+        RedisSceneUtils.delKeysByPerfix(STRING_PERFIX);
+        RedisSceneUtils.delKeysByPerfix(HASH_PERFIX);
+        RedisSceneUtils.delKeysByPerfix(LIST_PERFIX);
+        RedisSceneUtils.delKeysByPerfix(SET_PERFIX);
+        RedisSceneUtils.delKeysByPerfix(ZSET_PERFIX);
+    }
 
     @Test
     void keys() {

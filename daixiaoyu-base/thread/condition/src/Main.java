@@ -12,61 +12,32 @@ import java.util.concurrent.locks.ReentrantLock;
  **/
 public class Main {
     //定义一个锁
-    private final Lock lock = new ReentrantLock();
+    public static final Lock reentrantLock = new ReentrantLock();
     //定义属于这个锁的条件变量
-    private final Condition condition = lock.newCondition();
-    //定义一个标志位
-    private boolean flag = false;
-
-    public void printNum(){
-        lock.lock();
-        try {
-            if (!flag){
-                System.out.println("flag此时为false，先等等...");
-                condition.await();
-            }
-            System.out.println("flag此时为true");
-        }
-        catch (Exception e){
-            System.out.println("等待出现异常");
-        }
-        finally {
-            lock.unlock();
-        }
-    }
-
-    public void addNum(){
-        lock.lock();
-        try {
-            flag = true;
-            System.out.println("flag为true了，进行唤醒");
-            condition.signalAll();
-        }
-        catch (Exception e){
-            System.out.println("累加出现异常");
-        }
-        finally {
-            lock.unlock();
-        }
-    }
+    public static final Condition condition = reentrantLock.newCondition();
 
     public static void main(String[] args) {
-        Main main = new Main();
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    //休眠5秒后执行
-                    TimeUnit.SECONDS.sleep(5);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                main.addNum();
-            }
-        });
+        //先启动一下线程
+        Thread thread = new Thread(new OtherThread());
         thread.start();
-        main.printNum();
 
+        //先加锁
+        reentrantLock.lock();
+        try {
+            System.out.println("线程加锁成功，正在执行相关代码");
+            while (!GlobalSymbol.globalFlag.get()){
+                System.out.println("现在条件还不满足，先等待");
+                condition.await();
+            }
+            System.out.println("线程被唤醒，执行后续代码");
+        }
+        catch (Exception e){
+            System.out.println("加锁解锁逻辑出现异常");
+        }
+        finally {
+            //在finally中释放锁
+            reentrantLock.unlock();
+        }
         System.out.println("程序结束");
     }
 }

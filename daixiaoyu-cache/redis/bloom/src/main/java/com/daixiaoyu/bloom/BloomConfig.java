@@ -20,7 +20,9 @@ public class BloomConfig {
 
     @Bean
     public RBloomFilter<String>  bloomFilter(){
+        // 定义一个布隆过滤器，指定布隆过滤器的名称
         RBloomFilter<String> bloomFilter = redissonClient.getBloomFilter("bloomTest");
+        //定义布隆过滤器的大小，以及误差率
         bloomFilter.tryInit(100000L, 0.003);
         return bloomFilter;
     }

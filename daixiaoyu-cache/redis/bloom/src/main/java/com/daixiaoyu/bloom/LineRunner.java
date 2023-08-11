@@ -25,8 +25,12 @@ public class LineRunner implements CommandLineRunner {
         bloomFilter.add(name2);
         boolean flag1 = bloomFilter.contains("小明");
         System.out.println("布隆过滤器中是否可能有小明？" + flag1);
-
         boolean flag2 = bloomFilter.contains("小李");
         System.out.println("布隆过滤器中是否可能有小李？" + flag2);
+        System.out.println("当前布隆过滤器中有多少个数？" + bloomFilter.count());
+        System.out.println("预计布隆过滤器中可以插入多少个数?" + bloomFilter.getExpectedInsertions());
+        System.out.println("布隆过滤器的容错率：" + bloomFilter.getFalseProbability());
+        System.out.println("布隆过滤器哈希哈数的个数:" + bloomFilter.getHashIterations());
+        System.out.println("布隆过滤器的bit位有多少个？" + bloomFilter.getSize());
     }
 }

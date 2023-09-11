@@ -20,6 +20,7 @@ public class LineRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("主线程开始");
         asyncComponent.async("今天不上班，好耶");
+        asyncComponent.selfAsync();
         System.out.println("主线程结束");
     }
 }

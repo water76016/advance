@@ -24,4 +24,16 @@ public class AsyncComponent {
         }
         System.out.println("输入的内容是" + str + ",异步任务执行结束");
     }
+
+    @Async("asyncConfig")
+    public void selfAsync(){
+        System.out.println("我是自定义异步线程，线程池名称:" + Thread.currentThread().getName());
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            System.out.println("休眠失败");
+        }
+        System.out.println("自定义异步线程休眠结束" +
+                "");
+    }
 }

@@ -38,5 +38,9 @@ advance意为前进，旨在将自己的学习过程记录下来，希望每一�
 
 [SpringBoot 如何集成 Redis 实现布隆过滤器](https://juejin.cn/post/7266015600660906019)
 
+daixiaoyu-spring模块
+
+[SpringBoot执行异步任务Async介绍](https://juejin.cn/post/7277830326691840059)
+
 
 

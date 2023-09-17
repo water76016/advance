@@ -34,6 +34,8 @@ advance意为前进，旨在将自己的学习过程记录下来，希望每一�
 
 [【Java 多线程】如何正确使用 Condition 接口](https://juejin.cn/post/7265239806946410533)
 
+[【Java多线程】如何正确使用倒计时协调器：CountDownLatch](https://juejin.cn/post/7279316410735460386)
+
 #### daixiaoyu-cache模块
 
 [SpringBoot 如何集成 Redis 实现布隆过滤器](https://juejin.cn/post/7266015600660906019)

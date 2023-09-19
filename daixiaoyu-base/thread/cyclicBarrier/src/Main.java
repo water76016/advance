@@ -1,3 +1,4 @@
+import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.TimeUnit;
 
@@ -9,12 +10,16 @@ import java.util.concurrent.TimeUnit;
  * @create: 2023-06-17 15:26
  **/
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(5);
-        for (int i = 0; i < 5; i++){
+    public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(10);
+        //获取参与方的总数
+        System.out.println("参与方的总数为：" + cyclicBarrier.getParties());
+        //获取此时等待的线程数
+        System.out.println("此时等待的线程数为：" + cyclicBarrier.getNumberWaiting());
+
+        for (int i = 0; i < 10; i++){
             CyclicBarrierRunnable runnable = new CyclicBarrierRunnable(cyclicBarrier, i);
             new Thread(runnable).start();
-            TimeUnit.SECONDS.sleep(2);
         }
     }
 }

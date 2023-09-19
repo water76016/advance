@@ -1,5 +1,6 @@
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @program: advance
@@ -19,13 +20,13 @@ public class CyclicBarrierRunnable implements Runnable{
 
     @Override
     public void run() {
-        System.out.println("选手" + number + "成功登山");
-        System.out.println("选手" + number + "等待队友");
+        System.out.println("玩家" + number + "号正在加载游戏...");
         try {
+            TimeUnit.SECONDS.sleep(2);
             cyclicBarrier.await();
         } catch (Exception e) {
             System.out.println("线程执行出现问题");
         }
-        System.out.println("选手" + number + "下山");
+        System.out.println("玩家" + number + "号加载完成。");
     }
 }

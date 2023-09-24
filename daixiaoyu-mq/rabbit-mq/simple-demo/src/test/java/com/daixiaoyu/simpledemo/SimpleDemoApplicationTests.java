@@ -1,10 +1,10 @@
-package com.example.send_and_receive_message;
+package com.daixiaoyu.simpledemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SendAndReceiveMessageApplicationTests {
+class SimpleDemoApplicationTests {
 
     @Test
     void contextLoads() {

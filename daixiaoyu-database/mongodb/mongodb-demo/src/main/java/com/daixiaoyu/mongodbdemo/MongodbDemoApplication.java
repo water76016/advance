@@ -1,13 +1,13 @@
-package com.daixiaoyu.daixiaoyudatabase;
+package com.daixiaoyu.mongodbdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DaixiaoyuDatabaseApplication {
+public class MongodbDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DaixiaoyuDatabaseApplication.class, args);
+        SpringApplication.run(MongodbDemoApplication.class, args);
     }
 
 }

@@ -1,5 +1,7 @@
 package com.daixiaoyu.leetcode;
 
+import com.sun.xml.internal.ws.addressing.WsaActionUtil;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,12 +16,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        System.out.println(list.toString());
-
-        Collections.reverse(list);
+        list.add(0, 1);
+        list.add(0, 2);
+        list.add(0, 3);
         System.out.println(list.toString());
     }
 }

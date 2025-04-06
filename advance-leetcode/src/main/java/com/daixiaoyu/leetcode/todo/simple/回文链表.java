@@ -1,4 +1,4 @@
-package com.daixiaoyu.leetcode.simple.one;
+package com.daixiaoyu.leetcode.todo.simple;
 
 import com.daixiaoyu.leetcode.entity.ListNode;
 

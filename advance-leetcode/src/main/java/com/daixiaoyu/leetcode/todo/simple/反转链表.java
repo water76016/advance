@@ -1,4 +1,4 @@
-package com.daixiaoyu.leetcode.simple.one;
+package com.daixiaoyu.leetcode.todo.simple;
 
 import com.daixiaoyu.leetcode.entity.ListNode;
 
@@ -12,16 +12,16 @@ import com.daixiaoyu.leetcode.entity.ListNode;
 //todo:
 public class 反转链表 {
     public ListNode reverseList(ListNode head) {
-        //定义cur节点，指向当前节点
+        //定义当前节点，指向当前处理的位置
         ListNode cur = head;
-        //定义一个pre节点，指向前一个
+        //定义前一个节点，指向当前节点的前一个
         ListNode pre = null;
         while (cur != null){
-            //定义新的next节点，保存cur.next的位置
+            //保存当前节点的下一个位置
             ListNode next = cur.next;
-            //把cur.next指向pre
+            //让当前节点指向他的前一个
             cur.next = pre;
-            //修改pre和cur的值
+            //更新pre和next的值
             pre = cur;
             cur = next;
         }

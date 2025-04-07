@@ -1,4 +1,4 @@
-package com.daixiaoyu.leetcode.todo.simple;
+package com.daixiaoyu.leetcode.simple.one;
 
 /**
  * @program: advance-leetcode

@@ -55,6 +55,12 @@ public class LRUCache {
 
     public int get(int key){
         //先看节点是否存在
+        /**
+         * 画重点：
+         * 这里必须用node来判断节点是否存在， 不能用map
+         * 这是因为map是没有删除操作的，可能存在某个值最开始存在，但后面被挤出去了，但map里面会认为这个值一直存在
+         * 如果用map的话，就会存在问题
+         */
         DLinkedNode node = cache.get(key);
         if (node == null){
             //说明不存在，直接返回-1；

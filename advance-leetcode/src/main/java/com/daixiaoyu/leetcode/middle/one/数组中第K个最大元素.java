@@ -1,4 +1,4 @@
-package com.daixiaoyu.leetcode.todo.middle;
+package com.daixiaoyu.leetcode.middle.one;
 
 import java.util.Comparator;
 import java.util.Deque;
@@ -51,17 +51,21 @@ public class 数组中第K个最大元素 {
      * @return: int
      */
     public int findKthLargest(int[] nums, int k) {
-        int[] save = new int[20001];
+        //定义桶的大小，因为数据是正负10000，所以定义为20001
+        int[] bucket = new int[20001];
+        //把数据往桶里面放
         for (int num : nums){
-            save[num + 10000]++;
+            //画重点：这里由于数组的长度增加了10000，所以这里的Num也要增加10000
+            bucket[num + 10000]++;
         }
-        for (int i = save.length - 1; i >= 0; i--){
-            k = k - save[i];
+        //从后往前计算
+        for (int i = bucket.length - 1; i >= 0; i--){
+            k = k - bucket[i];
             if (k <= 0){
-                //k小于等于0说明满足了
+                //说明找到那个数了，返回（前面增加了10000，这里就减10000）
                 return i - 10000;
             }
         }
-        return 0;
+        return -1;
     }
 }

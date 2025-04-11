@@ -1,4 +1,4 @@
-package com.daixiaoyu.leetcode.todo.middle;
+package com.daixiaoyu.leetcode.middle.one;
 
 import jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter;
 
